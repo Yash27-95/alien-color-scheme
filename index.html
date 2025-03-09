@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <!-- viewport tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- style sheet -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main id="generator">
+            <form type="submit">
+                <input 
+                    type="color" 
+                    name="seed-color" 
+                    id="seed-color" 
+                    class="seed-color"
+                    aria-label="Choose your seed color" 
+                />
+                <select id="scheme" name="scheme" class="scheme" aria-label="Choose you scheme">
+                    <option value="monochrome" id="monochrome" class="highlighted-option"selected>Monochrome</option>
+                    <option value="monochrome-dark" id="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light" id="monochrome-light">Monochrome-light</option>
+                    <option value="analogic" id="analogic">Analogic</option>
+                    <option value="complement" id="complement">Complement</option>
+                    <option value="analogic-complement"                 id="analogic-complement">Analogic-complement</option>
+                    <option value="triad" id="triad">Triad</option>    
+                </select>
+                <button 
+                    type="submit" 
+                    id="get-scheme" 
+                    class="scheme-generate-btn"
+                >
+                    Get color scheme
+                </button>
+            </form> 
+            <div id="scheme-list" class="list">
+                <!-- schemes here -->
+            </div>   
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
